@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* formatar a página. */
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    background-color: #62374e;
+    padding: 50px;
+    place-items: center;
+}
+
+/* o grid-template-columns foi usado para definir que o "formato" da página será em colunas, padding para dar um espaçamento da "parede" da página, e o place-items para os quadrados ficarem no centro das divs, e assim mais parecido com o desenho. */
+
+div{
+    width: 100px;
+    height: 100px;
+    background: #fdc57b;
+}
+
+/* width e height para definir a altura e largura do quadrado, e background, sua cor. */
