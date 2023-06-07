@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #E3516E;
+    align-items: center;
+}
+
+.bolinha{
+    display: grid;
+    grid-template-areas: 
+        "azul amarelo"
+        "branco";
+    place-items: center;
+    background-color: blue;
+    height: 50vh;
+    width: 50vh;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+}
+
+#azul{
+    grid-area: azul;
+    background: #51B5A9;
+    border-radius: 100px 0px 0px 0px;
+}
+
+#amarelo{
+    grid-area: amarelo;
+    background: #FADE8B;
+    border-radius: 0px 100px 0px 0px;
+}
+
+#branco{
+    /* grid-area: branco; */
+    background: #F7F3D7;
+    border-radius: 0px 0px 0px 100px;
+}
