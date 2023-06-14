@@ -7,39 +7,45 @@
 body{
     height: 100vh;
     background-color: #E3516E;
+
+    /* para centralizar na página */
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .bolinha{
+
+    /* definir como coluna e tamanho de cada uma */
     display: grid;
-    grid-template-areas: 
-        "azul amarelo"
-        "branco";
-    place-items: center;
-    background-color: blue;
-    height: 50vh;
-    width: 50vh;
+    grid-template-columns: 1fr 1fr;
+
+    /* tamanho do círculo */
+    height: 300px;
+    width: 300px;
+
+    /* borda da div fazendo um cículo total */
+    border-radius: 100%;
+
+    /* para esconder tudo que está fora da div bolinha */
+    overflow: hidden;
 }
 
+/* definindo tamanho para o círculo aparecer */
 div{
-    width: 100px;
-    height: 100px;
+    height: 100%;
+    width: 100%;
 }
 
+/* definindo as cores das partes do círculo */
 #azul{
-    grid-area: azul;
-    background: #51B5A9;
-    border-radius: 100px 0px 0px 0px;
+    background-color: #51B5A9;
 }
 
 #amarelo{
-    grid-area: amarelo;
-    background: #FADE8B;
-    border-radius: 0px 100px 0px 0px;
+    background-color: #FADE8B;
 }
 
 #branco{
-    /* grid-area: branco; */
-    background: #F7F3D7;
-    border-radius: 0px 0px 0px 100px;
+    background-color: #F7F3D7;
 }

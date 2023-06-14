@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "atv2 atv6";
+}
+
+header{
+    grid-area: header;
+    height: 8vh;
+    background-color: #ffb6c1;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.dois, .seis{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+img{
+    width: 22rem;
+}
+
+.a-dois{
+    grid-area: atv2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.a-dois:hover{
+    color: #ffb6c1;
+}
+
+.seis{
+    grid-area: atv6;
+}
+
+.a-seis{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.a-seis:hover{
+    color: #ffb6c1;
+}
